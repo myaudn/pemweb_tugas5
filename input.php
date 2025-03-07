@@ -7,6 +7,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: result.php");
     exit();
 }
+
+if (!isset($_SESSION['email'])) {
+    header("Location: index.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -19,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <form method="POST">
         Nama: <input type="text" name="name" required><br>
-        Bidang Keahlian: <input type="text" name="specialty" required><br>
-        Riwayat pendidikan: <textarea name="education" required></textarea><br>
+        Bidang Keahlian: <input type="text" name="specialty"><br>
+        Riwayat pendidikan: <textarea name="education"></textarea><br>
         <button type="submit">Submit</button>
     </form>
 </body>

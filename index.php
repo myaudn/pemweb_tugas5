@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -21,14 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>  
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="loginbox">
-            <form action="input.php" method="POST">
-                <label>Masukkan Email Anda</label><br>
-                Email: <input type="email" name="email" required><br>
-                Password: <input type="password" name="password" required><br>
+            <p class="greet">Welcome!</p>
+            <p class="acc1">create your own CV easily and quickly<br>here!</p>
+            <form method="POST" class="first-form">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Log in</button>
             </form>
             <?php if (isset($error)) echo "<p>$error</p>"; ?>

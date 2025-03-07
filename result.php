@@ -1,4 +1,9 @@
-<?php include 'session.php'; ?>
+<?php include 'session.php';
+if (!isset($_SESSION['name']) || !isset($_SESSION['specialty']) || !isset($_SESSION['education'])) {
+    header("Location: input.php");
+    exit;
+}
+?>
 
 <!DOCTYPE html>
 <html>
