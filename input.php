@@ -2,6 +2,17 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['name'] = $_POST['name'];
+    $_SESSION['city'] = $_POST['city'];
+    
+    if (isset($_POST['birth']) && !empty($_POST['birth'])) {
+        $birth = DateTime::createFromFormat('Y-m-d', $_POST['birth']);
+        if ($birth !== false) {
+            $_SESSION['birth'] = $_POST['birth'];
+        } else {
+            echo "Format tanggal tidak valid!";
+        }
+    }
+
     $_SESSION['specialty'] = $_POST['specialty'];
     $_SESSION['about'] = $_POST['about'];
     $_SESSION['hardskill'] = $_POST['hardskill'];
@@ -69,6 +80,10 @@ if (!isset($_SESSION['email'])) {
                     <input type="file" name="pic" id="pic-up" style="opacity: 0; height: 0.1px;"><br>
                     <label>Nama</label><br>
                     <input type="text" name="name" placeholder="Nama Lengkap" required><br>
+                    <label>Kota Kelahiran</label><br>
+                    <input type="text" name="city" placeholder="Kota Kelahiran"><br>
+                    <label>Tanggal Lahir</label><br>
+                    <input type="date" name="birth"><br>
                     <label>Bidang Keahlian</label><br>
                     <input type="text" name="specialty" placeholder="Jurusan atau Profesi"><br>
                     <label>Tentang anda</label><br>

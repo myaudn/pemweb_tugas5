@@ -25,6 +25,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['specialty']) || !isset($_SESS
                     ?>
                     <p id="name"><?php echo $_SESSION['name']; ?></p>
                     <p id="specialty"><?php echo $_SESSION['specialty']; ?></p>
+                    <p class="birth"><?php echo $_SESSION['city']; ?>, <?php echo $_SESSION['birth']; ?></p>
                 </div>
                 <div class="co-main">
                     <p id="about"><?php echo nl2br($_SESSION['about']); ?></p>

@@ -189,6 +189,11 @@ textarea {
     font-size: 22px;
 }
 
+.birth {
+    padding: 0 20px;
+    margin: 0;
+}
+
 .co-main {
     display: flex;
     flex-direction: column;
@@ -232,6 +237,7 @@ textarea {
 #softskill {
     margin: 20px 0 0 0;
     padding: 0 20px 20px 20px;
+    
 }
 
 .contact {
