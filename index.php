@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: input.php");
         exit();
     } else {
-        $error = "Email atau password salah.";
+        $error = "Email atau password salah!";
     }
 }
 ?>
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Log in</button>
             </form>
-            <?php if (isset($error)) echo "<p>$error</p>"; ?>
+            <?php if (isset($error)) echo "<p style=\"color: #ff0000; text-align: center;\">$error</p>"; ?>
         </div>
     </div>
 </body>

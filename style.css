@@ -75,6 +75,32 @@ button[type="submit"] {
     color: #673C33;
 }
 
+input[type="text"] {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    border: 1.5px solid #673C33;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #673C33;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    border: 1.5px solid #673C33;
+    border-radius: 10px;
+    width: 100%;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    color: #673C33;
+    outline: none;
+}
+
 .greet {
     font-weight: bolder;
     font-size: 26px;
@@ -89,4 +115,45 @@ button[type="submit"] {
 
 .contentcv {
     background-color: #f0f0f0;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 30px 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.inputbox {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.custom-pic-up {
+    border: 1.5px solid #673C33;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #FFD879;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.displaycv {
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+.picholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.picholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
