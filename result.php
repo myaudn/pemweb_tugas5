@@ -36,12 +36,12 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['specialty']) || !isset($_SESS
             
             <div class="lower">
                 <div class="expe">
-                <p class="subtitle"><strong>Riwayat Pendidikan</strong><br></p>
+                <p class="subtitle"><strong>Education</strong><br></p>
                 <p><?php echo nl2br($_SESSION['education']); ?></p>
                 </div>
                 <p id="softskill"><?php echo nl2br($_SESSION['softskill']); ?></p>
                 <div class="contact">
-                    <p class="subtitle">No. HP:</p>
+                    <p class="subtitle">Phone Number:</p>
                     <p><?php echo $_SESSION['num']; ?></p>
                     <p class="subtitle">Email:</p>
                     <p><?php echo $_SESSION['email']; ?></p>

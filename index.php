@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: input.php");
         exit();
     } else {
-        $error = "Email atau password salah!";
+        $error = "Email or Password is wrong!";
     }
 }
 ?>

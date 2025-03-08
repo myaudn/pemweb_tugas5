@@ -73,28 +73,28 @@ if (!isset($_SESSION['email'])) {
     <div class="container">
         <div class="contentcv">
             <div class="inputbox">
-                <p class="greet">Deskripsikan dirimu!</p><br>
+                <p class="greet">Describe yourself!</p><br>
                 <form method="POST" enctype="multipart/form-data">
-                    <label>Foto Profil</label><br>
+                    <label>Profile Picture</label><br>
                     <label for="pic-up" class="custom-pic-up">Post your picture</label>
                     <input type="file" name="pic" id="pic-up" style="opacity: 0; height: 0.1px;"><br>
-                    <label>Nama</label><br>
-                    <input type="text" name="name" placeholder="Nama Lengkap" required><br>
-                    <label>Kota Kelahiran</label><br>
-                    <input type="text" name="city" placeholder="Kota Kelahiran"><br>
-                    <label>Tanggal Lahir</label><br>
+                    <label>Name</label><br>
+                    <input type="text" name="name" placeholder="Fullname" required><br>
+                    <label>Hometown</label><br>
+                    <input type="text" name="city" placeholder="Hometown"><br>
+                    <label>Birthdate</label><br>
                     <input type="date" name="birth"><br>
-                    <label>Bidang Keahlian</label><br>
-                    <input type="text" name="specialty" placeholder="Jurusan atau Profesi"><br>
-                    <label>Tentang anda</label><br>
+                    <label>Title</label><br>
+                    <input type="text" name="specialty" placeholder="Major or Profession"><br>
+                    <label>About you</label><br>
                     <textarea name="about"></textarea><br>
                     <label>Hardskills</label><br>
                     <textarea name="hardskill"></textarea><br>
-                    <label>Riwayat Pendidikan</label><br>
+                    <label>Education</label><br>
                     <textarea name="education"></textarea><br>
-                    <label>Softskill</label><br>
+                    <label>Softskills</label><br>
                     <textarea name="softskill"></textarea><br>
-                    <label>Nomor telepon</label><br>
+                    <label>Phone Number</label><br>
                     <input type="text" name="num" placeholder="+62 xxx-xxxx-xxxx"><br>
                     <label>Github</label><br>
                     <input type="text" name="gith" placeholder="username"><br>
