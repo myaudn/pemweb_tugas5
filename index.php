@@ -21,18 +21,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>  
+    <title>Halaman Log In</title>  
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="loginbox">
-            <p class="greet">Welcome!</p>
-            <p class="acc1">create your own CV easily and quickly<br>here!</p>
+            <p class="greet">Selamat Datang!</p>
+            <p class="acc1">Buat CV mu sendiri dengan mudah dan cepat<br>di sini!</p>
             <form method="POST" class="first-form">
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Log in</button>
+                <button type="submit">Daftar</button>
             </form>
             <?php if (isset($error)) echo "<p style=\"color: #ff0000; text-align: center;\">$error</p>"; ?>
         </div>

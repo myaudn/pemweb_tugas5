@@ -10,7 +10,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['specialty']) || !isset($_SESS
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Custom CV</title>
+        <title>CV Kustom</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -29,19 +29,19 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['specialty']) || !isset($_SESS
                 </div>
                 <div class="co-main">
                     <p id="about"><?php echo nl2br($_SESSION['about']); ?></p>
-                    <p class="subtitle">Abilities</p><hr style="border: 1px solid  #673C33; width: 90%; margin: 0 20px 0 auto;">
+                    <p class="subtitle">Skill</p><hr style="border: 1px solid  #673C33; width: 90%; margin: 0 20px 0 auto;">
                     <p id="hardskill"><?php echo nl2br($_SESSION['hardskill']); ?></p>
                 </div>
             </div>
             
             <div class="lower">
                 <div class="expe">
-                <p class="subtitle"><strong>Education</strong><br></p>
+                <p class="subtitle"><strong>Riwayat Pendidikan</strong><br></p>
                 <p><?php echo nl2br($_SESSION['education']); ?></p>
                 </div>
                 <p id="softskill"><?php echo nl2br($_SESSION['softskill']); ?></p>
                 <div class="contact">
-                    <p class="subtitle">Phone Number:</p>
+                    <p class="subtitle">Nomor Telepon:</p>
                     <p><?php echo $_SESSION['num']; ?></p>
                     <p class="subtitle">Email:</p>
                     <p><?php echo $_SESSION['email']; ?></p>
